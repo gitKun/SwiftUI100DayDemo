@@ -22,9 +22,6 @@ struct ContentView: View {
                     VStack {
                         ScrollView(.horizontal) {
                             HStack {
-                                ForEach(1..<9) {_ in
-                                    TimeTypeButton(name: "全部", isSelected: true)
-                                }
                                 
                                 Button(action: {
                                     

@@ -35,6 +35,10 @@ struct DetailView: View {
                     .font(.title)
                     .foregroundColor(.secondary)
                 
+                Text(self.book.formattedLaunchDate)
+                    .font(.callout)
+                    .foregroundColor(.secondary)
+                
                 Text(self.book.review ?? "No review")
                     .padding()
                 
@@ -84,6 +88,20 @@ struct DetailView_Previews: PreviewProvider {
         book.review = "This was a great book; I really enjoyed it."
         return NavigationView {
             DetailView(book: book)
+        }
+    }
+}
+
+
+extension Book {
+    var formattedLaunchDate: String {
+        if let launchDate = date {
+            let formatter = DateFormatter()
+            formatter.dateFormat = "y年MM月dd日" // 格式为: 2020年03月04日
+            //formatter.dateStyle = .long   // 格式为: March 4, 2020
+            return formatter.string(from: launchDate)
+        } else {
+            return "N/A"
         }
     }
 }

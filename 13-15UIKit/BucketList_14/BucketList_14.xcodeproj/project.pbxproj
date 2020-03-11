@@ -13,6 +13,7 @@
 		A19EF5692418CFCC0002F720 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A19EF5682418CFCC0002F720 /* Assets.xcassets */; };
 		A19EF56C2418CFCC0002F720 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A19EF56B2418CFCC0002F720 /* Preview Assets.xcassets */; };
 		A19EF56F2418CFCC0002F720 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19EF56D2418CFCC0002F720 /* LaunchScreen.storyboard */; };
+		A19EF57724191ECB0002F720 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19EF57624191ECB0002F720 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A19EF56B2418CFCC0002F720 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A19EF56E2418CFCC0002F720 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A19EF5702418CFCC0002F720 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A19EF57624191ECB0002F720 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				A19EF5622418CFCB0002F720 /* AppDelegate.swift */,
 				A19EF5642418CFCB0002F720 /* SceneDelegate.swift */,
 				A19EF5662418CFCB0002F720 /* ContentView.swift */,
+				A19EF57624191ECB0002F720 /* MapView.swift */,
 				A19EF5682418CFCC0002F720 /* Assets.xcassets */,
 				A19EF56D2418CFCC0002F720 /* LaunchScreen.storyboard */,
 				A19EF5702418CFCC0002F720 /* Info.plist */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A19EF5632418CFCB0002F720 /* AppDelegate.swift in Sources */,
+				A19EF57724191ECB0002F720 /* MapView.swift in Sources */,
 				A19EF5652418CFCB0002F720 /* SceneDelegate.swift in Sources */,
 				A19EF5672418CFCB0002F720 /* ContentView.swift in Sources */,
 			);

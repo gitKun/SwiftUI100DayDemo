@@ -7,10 +7,13 @@
 //
 
 import SwiftUI
+import LocalAuthentication
+
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        MapView()
+            .edgesIgnoringSafeArea(.all)
     }
 }
 

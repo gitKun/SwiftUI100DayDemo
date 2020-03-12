@@ -13,6 +13,13 @@ import MapKit
 struct MapView: UIViewRepresentable {
     
     
+    @Binding var centerCoordinate: CLLocationCoordinate2D
+    
+    @Binding var selectedPlace: MKPointAnnotation?
+    @Binding var showingPlaceDetails: Bool
+    
+    var annotations: [MKPointAnnotation]
+    
     class Coordinator: NSObject, MKMapViewDelegate {
         var parent: MapView
         init(_ parent: MapView) {
@@ -21,13 +28,28 @@ struct MapView: UIViewRepresentable {
         
         // 地图发生移动时调用
         func mapViewDidChangeVisibleRegion(_ mapView: MKMapView) {
-            print(mapView.centerCoordinate)
+            parent.centerCoordinate = mapView.centerCoordinate
         }
         // 自定义大头针
         func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-            let view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: nil)
-            view.canShowCallout = true
-            return view
+            let identifier = "Placemark"
+            var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+            
+            if annotationView == nil {
+                annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+                annotationView?.canShowCallout = true
+                annotationView?.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+            } else {
+                annotationView?.annotation = annotation
+            }
+            return annotationView
+        }
+        
+        // 大头针点击详情按钮后调用的方法
+        func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+            guard let placemark = view.annotation as? MKPointAnnotation  else { return }
+            parent.selectedPlace = placemark
+            parent.showingPlaceDetails = true
         }
     }
     
@@ -42,17 +64,31 @@ struct MapView: UIViewRepresentable {
     func makeUIView(context: Context) -> MKMapView {
         let mapView = MKMapView()
         mapView.delegate = context.coordinator
-        // 添加大头针
-        let annotation = MKPointAnnotation()
-        annotation.title = "老家"
-        annotation.subtitle = "出生的地方"
-        annotation.coordinate = CLLocationCoordinate2D(latitude: 33.422119, longitude: 115.322696)
-        mapView.addAnnotation(annotation)
         return mapView
     }
     
     func updateUIView(_ uiView: MKMapView, context: Context) {
-        
+        if annotations.count != uiView.annotations.count {
+            uiView.removeAnnotations(uiView.annotations)
+            uiView.addAnnotations(annotations)
+        }
     }
 
+}
+
+extension MKPointAnnotation {
+    static var example: MKPointAnnotation {
+        let annotation = MKPointAnnotation()
+        annotation.title = "老家"
+        annotation.subtitle = "出生的地方"
+        annotation.coordinate = CLLocationCoordinate2D(latitude: 33.422127, longitude: 115.322803)
+        return annotation
+    }
+}
+
+
+struct MapView_Previews: PreviewProvider {
+    static var previews: some View {
+        MapView(centerCoordinate: .constant(MKPointAnnotation.example.coordinate), selectedPlace: .constant(MKPointAnnotation.example), showingPlaceDetails: .constant(false), annotations: [MKPointAnnotation.example])
+    }
 }

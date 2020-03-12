@@ -14,6 +14,10 @@
 		A19EF56C2418CFCC0002F720 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A19EF56B2418CFCC0002F720 /* Preview Assets.xcassets */; };
 		A19EF56F2418CFCC0002F720 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19EF56D2418CFCC0002F720 /* LaunchScreen.storyboard */; };
 		A19EF57724191ECB0002F720 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19EF57624191ECB0002F720 /* MapView.swift */; };
+		A19EF5792419FB960002F720 /* MKPointAnnotation-ObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19EF5782419FB960002F720 /* MKPointAnnotation-ObservableObject.swift */; };
+		A19EF57B2419FC460002F720 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19EF57A2419FC460002F720 /* EditView.swift */; };
+		A19EF57D241A03C00002F720 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19EF57C241A03C00002F720 /* Result.swift */; };
+		A19EF57F241A12D30002F720 /* MkPointAnnotation-Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19EF57E241A12D30002F720 /* MkPointAnnotation-Codable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		A19EF56E2418CFCC0002F720 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A19EF5702418CFCC0002F720 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A19EF57624191ECB0002F720 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		A19EF5782419FB960002F720 /* MKPointAnnotation-ObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKPointAnnotation-ObservableObject.swift"; sourceTree = "<group>"; };
+		A19EF57A2419FC460002F720 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		A19EF57C241A03C00002F720 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		A19EF57E241A12D30002F720 /* MkPointAnnotation-Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MkPointAnnotation-Codable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,10 @@
 				A19EF5642418CFCB0002F720 /* SceneDelegate.swift */,
 				A19EF5662418CFCB0002F720 /* ContentView.swift */,
 				A19EF57624191ECB0002F720 /* MapView.swift */,
+				A19EF5782419FB960002F720 /* MKPointAnnotation-ObservableObject.swift */,
+				A19EF57E241A12D30002F720 /* MkPointAnnotation-Codable.swift */,
+				A19EF57A2419FC460002F720 /* EditView.swift */,
+				A19EF57C241A03C00002F720 /* Result.swift */,
 				A19EF5682418CFCC0002F720 /* Assets.xcassets */,
 				A19EF56D2418CFCC0002F720 /* LaunchScreen.storyboard */,
 				A19EF5702418CFCC0002F720 /* Info.plist */,
@@ -151,7 +163,11 @@
 			files = (
 				A19EF5632418CFCB0002F720 /* AppDelegate.swift in Sources */,
 				A19EF57724191ECB0002F720 /* MapView.swift in Sources */,
+				A19EF57D241A03C00002F720 /* Result.swift in Sources */,
+				A19EF57B2419FC460002F720 /* EditView.swift in Sources */,
 				A19EF5652418CFCB0002F720 /* SceneDelegate.swift in Sources */,
+				A19EF5792419FB960002F720 /* MKPointAnnotation-ObservableObject.swift in Sources */,
+				A19EF57F241A12D30002F720 /* MkPointAnnotation-Codable.swift in Sources */,
 				A19EF5672418CFCB0002F720 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

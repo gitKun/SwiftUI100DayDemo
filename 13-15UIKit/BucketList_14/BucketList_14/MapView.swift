@@ -81,7 +81,7 @@ extension MKPointAnnotation {
         let annotation = MKPointAnnotation()
         annotation.title = "老家"
         annotation.subtitle = "出生的地方"
-        annotation.coordinate = CLLocationCoordinate2D(latitude: 33.422127, longitude: 115.322803)
+        annotation.coordinate = CLLocationCoordinate2D(latitude: 33.41731801546715, longitude: 115.310776498185)
         return annotation
     }
 }

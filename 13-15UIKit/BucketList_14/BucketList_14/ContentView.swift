@@ -62,7 +62,7 @@ struct ContentView: View {
                 .padding()
                 .background(Color.blue)
                 .foregroundColor(.white)
-                .clipShape(RoundedRectangle())
+                .clipShape(RoundedRectangle(cornerSize: CGSize(width: 8, height: 8)))
             }
         }
         .alert(isPresented: $showingPlaceDetails) {

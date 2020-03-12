@@ -104,11 +104,23 @@ struct ContentView: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
                 
+                #if false
                 List(usedWords, id: \.self) {
                     Image(systemName: "\($0.count).circle")
                         .foregroundColor(.red)
                     Text($0)
                 }
+                #else
+                // 修复 旁白无法读取到全部数据的BUG(增添旁白支持)
+                List(usedWords, id: \.self) { word in
+                    HStack {
+                        Image(systemName: "\(word.count).circle")
+                        Text(word)
+                    }
+                    .accessibilityElement(children: .ignore)
+                    .accessibility(label: Text("\(word), \(word.count) letters"))
+                }
+                #endif
                 
             }
             .navigationBarTitle(rootWord)

@@ -1,0 +1,22 @@
+PODS:
+  - EFQRCode (5.1.6):
+    - EFQRCode/Core (= 5.1.6)
+  - EFQRCode/Core (5.1.6)
+  - FSCalendar (2.8.1)
+
+DEPENDENCIES:
+  - EFQRCode (~> 5.1.6)
+  - FSCalendar (~> 2.8.1)
+
+SPEC REPOS:
+  trunk:
+    - EFQRCode
+    - FSCalendar
+
+SPEC CHECKSUMS:
+  EFQRCode: a7ea2e517912f5bf6ba258b631327a83cd8084a5
+  FSCalendar: 5245140456fcbcac5824c203b98bd8068bdfee1a
+
+PODFILE CHECKSUM: ac58564da7e868c3b553e9128219f9ea7e72cffd
+
+COCOAPODS: 1.9.1

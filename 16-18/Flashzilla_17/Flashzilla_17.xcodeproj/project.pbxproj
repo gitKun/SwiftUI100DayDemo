@@ -13,6 +13,8 @@
 		A1C3E3EB241C7A8A0024FFAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C3E3EA241C7A8A0024FFAF /* Assets.xcassets */; };
 		A1C3E3EE241C7A8A0024FFAF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C3E3ED241C7A8A0024FFAF /* Preview Assets.xcassets */; };
 		A1C3E3F1241C7A8A0024FFAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C3E3EF241C7A8A0024FFAF /* LaunchScreen.storyboard */; };
+		A1C3E3F9241C886A0024FFAF /* UseGestureDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C3E3F8241C886A0024FFAF /* UseGestureDemo.swift */; };
+		A1C3E3FB241C8EEF0024FFAF /* UseHapticsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C3E3FA241C8EEF0024FFAF /* UseHapticsDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		A1C3E3ED241C7A8A0024FFAF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A1C3E3F0241C7A8A0024FFAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1C3E3F2241C7A8A0024FFAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1C3E3F8241C886A0024FFAF /* UseGestureDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseGestureDemo.swift; sourceTree = "<group>"; };
+		A1C3E3FA241C8EEF0024FFAF /* UseHapticsDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseHapticsDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				A1C3E3E4241C7A880024FFAF /* AppDelegate.swift */,
 				A1C3E3E6241C7A880024FFAF /* SceneDelegate.swift */,
 				A1C3E3E8241C7A880024FFAF /* ContentView.swift */,
+				A1C3E3F8241C886A0024FFAF /* UseGestureDemo.swift */,
+				A1C3E3FA241C8EEF0024FFAF /* UseHapticsDemo.swift */,
 				A1C3E3EA241C7A8A0024FFAF /* Assets.xcassets */,
 				A1C3E3EF241C7A8A0024FFAF /* LaunchScreen.storyboard */,
 				A1C3E3F2241C7A8A0024FFAF /* Info.plist */,
@@ -146,7 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1C3E3F9241C886A0024FFAF /* UseGestureDemo.swift in Sources */,
 				A1C3E3E5241C7A880024FFAF /* AppDelegate.swift in Sources */,
+				A1C3E3FB241C8EEF0024FFAF /* UseHapticsDemo.swift in Sources */,
 				A1C3E3E7241C7A880024FFAF /* SceneDelegate.swift in Sources */,
 				A1C3E3E9241C7A880024FFAF /* ContentView.swift in Sources */,
 			);

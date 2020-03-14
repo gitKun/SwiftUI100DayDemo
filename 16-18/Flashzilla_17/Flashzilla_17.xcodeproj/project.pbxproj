@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A12AA6BD241CBD57001BF6C2 /* UseContentShapDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12AA6BC241CBD57001BF6C2 /* UseContentShapDemo.swift */; };
+		A12AA6BF241CC8BE001BF6C2 /* UseTimerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12AA6BE241CC8BE001BF6C2 /* UseTimerDemo.swift */; };
+		A12AA6C1241CC9D0001BF6C2 /* UseOnRevceiveDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12AA6C0241CC9D0001BF6C2 /* UseOnRevceiveDemo.swift */; };
+		A12AA6C3241CCDED001BF6C2 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12AA6C2241CCDED001BF6C2 /* Card.swift */; };
+		A12AA6C6241CD22D001BF6C2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12AA6C5241CD22D001BF6C2 /* CardView.swift */; };
+		A13A0352241D03D9003FEC2E /* EditCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13A0351241D03D9003FEC2E /* EditCards.swift */; };
 		A1C3E3E5241C7A880024FFAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C3E3E4241C7A880024FFAF /* AppDelegate.swift */; };
 		A1C3E3E7241C7A880024FFAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C3E3E6241C7A880024FFAF /* SceneDelegate.swift */; };
 		A1C3E3E9241C7A880024FFAF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C3E3E8241C7A880024FFAF /* ContentView.swift */; };
@@ -18,6 +24,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A12AA6BC241CBD57001BF6C2 /* UseContentShapDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseContentShapDemo.swift; sourceTree = "<group>"; };
+		A12AA6BE241CC8BE001BF6C2 /* UseTimerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseTimerDemo.swift; sourceTree = "<group>"; };
+		A12AA6C0241CC9D0001BF6C2 /* UseOnRevceiveDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseOnRevceiveDemo.swift; sourceTree = "<group>"; };
+		A12AA6C2241CCDED001BF6C2 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		A12AA6C5241CD22D001BF6C2 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		A13A0351241D03D9003FEC2E /* EditCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCards.swift; sourceTree = "<group>"; };
 		A1C3E3E1241C7A880024FFAF /* Flashzilla_17.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashzilla_17.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C3E3E4241C7A880024FFAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1C3E3E6241C7A880024FFAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A12AA6C4241CCDF1001BF6C2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A12AA6C2241CCDED001BF6C2 /* Card.swift */,
+				A13A0351241D03D9003FEC2E /* EditCards.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A1C3E3D8241C7A880024FFAF = {
 			isa = PBXGroup;
 			children = (
@@ -63,8 +84,13 @@
 				A1C3E3E4241C7A880024FFAF /* AppDelegate.swift */,
 				A1C3E3E6241C7A880024FFAF /* SceneDelegate.swift */,
 				A1C3E3E8241C7A880024FFAF /* ContentView.swift */,
+				A12AA6C5241CD22D001BF6C2 /* CardView.swift */,
+				A12AA6C4241CCDF1001BF6C2 /* Model */,
+				A12AA6BC241CBD57001BF6C2 /* UseContentShapDemo.swift */,
 				A1C3E3F8241C886A0024FFAF /* UseGestureDemo.swift */,
 				A1C3E3FA241C8EEF0024FFAF /* UseHapticsDemo.swift */,
+				A12AA6BE241CC8BE001BF6C2 /* UseTimerDemo.swift */,
+				A12AA6C0241CC9D0001BF6C2 /* UseOnRevceiveDemo.swift */,
 				A1C3E3EA241C7A8A0024FFAF /* Assets.xcassets */,
 				A1C3E3EF241C7A8A0024FFAF /* LaunchScreen.storyboard */,
 				A1C3E3F2241C7A8A0024FFAF /* Info.plist */,
@@ -152,9 +178,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A12AA6BD241CBD57001BF6C2 /* UseContentShapDemo.swift in Sources */,
+				A12AA6C3241CCDED001BF6C2 /* Card.swift in Sources */,
 				A1C3E3F9241C886A0024FFAF /* UseGestureDemo.swift in Sources */,
+				A12AA6C1241CC9D0001BF6C2 /* UseOnRevceiveDemo.swift in Sources */,
+				A13A0352241D03D9003FEC2E /* EditCards.swift in Sources */,
+				A12AA6C6241CD22D001BF6C2 /* CardView.swift in Sources */,
 				A1C3E3E5241C7A880024FFAF /* AppDelegate.swift in Sources */,
 				A1C3E3FB241C8EEF0024FFAF /* UseHapticsDemo.swift in Sources */,
+				A12AA6BF241CC8BE001BF6C2 /* UseTimerDemo.swift in Sources */,
 				A1C3E3E7241C7A880024FFAF /* SceneDelegate.swift in Sources */,
 				A1C3E3E9241C7A880024FFAF /* ContentView.swift in Sources */,
 			);

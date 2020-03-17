@@ -31,15 +31,44 @@ struct MissionView: View {
         self.astronauts = matches
     }
     
+    
+    func scaleForImage(localMidY: CGFloat, globalMidY: CGFloat, safeSpace: CGFloat) -> CGFloat {
+        var scale: CGFloat = 1.0
+        
+        let fixedMidY = localMidY + safeSpace
+        
+        guard globalMidY < fixedMidY else {
+            return scale
+        }
+        
+        scale = globalMidY / fixedMidY
+        
+        guard scale > 0.8 else {
+            return 0.8
+        }
+        
+        return scale
+    }
+    
+    
     var body: some View {
-        GeometryReader { geometry in
+        return GeometryReader { geometry in
             ScrollView(.vertical) {
                 VStack {
-                    Image(self.mission.image)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(maxWidth: geometry.size.width * 0.7)
-                        .padding(.top)
+                    GeometryReader { innerGeo in
+                        Image(self.mission.image)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: innerGeo.size.width)
+                            .padding(.top)
+                            .contentShape(Rectangle())
+                            .scaleEffect(self.scaleForImage(localMidY: innerGeo.frame(in: .local).midY, globalMidY: innerGeo.frame(in: .global).midY, safeSpace: geometry.safeAreaInsets.top))
+                            .onTapGesture {
+                                print("innerGeo.local.midY = \(innerGeo.frame(in: .local).midY)")
+                                print("geometry.safeAreaInsets = \(geometry.safeAreaInsets)")
+                        }
+                    }
+                    .frame(height: geometry.size.width * 0.7)
                     
                     Text(self.mission.formattedLaunchDate)
                         .font(.headline)
@@ -47,9 +76,13 @@ struct MissionView: View {
                     Text(self.mission.description)
                         .padding()
                         .layoutPriority(1)
-                    
+
+                    Text(self.mission.description)
+                    .padding()
+                    .layoutPriority(1)
+
                     Spacer(minLength: 25)
-                    
+
                     ForEach(self.astronauts, id: \.role) { crewMember in
                         NavigationLink(destination: AstronautView(astronaut: crewMember.astronaut)) {
                             CrewMemberCell(crewMember: crewMember)

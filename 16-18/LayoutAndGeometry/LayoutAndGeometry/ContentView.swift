@@ -11,13 +11,33 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        UseGeometryReaderDemo1()
+        UseGeometryReaderDemo00()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+
+struct UseGeometryReaderDemo00: View {
+    
+    var body: some View {
+        ScrollView(.vertical) {
+            VStack {
+                GeometryReader { fullView in
+                    Image("touxiang_8")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(maxHeight: .infinity)
+                        .onTapGesture {
+                            print("fullView size = \(fullView.size)")
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -33,9 +53,9 @@ struct UseGeometryReaderDemo1: View {
                     GeometryReader { geo in
                         Text("Row #\(index)")
                             .font(.title)
-                            .frame(width: fullView.size.width)
+                            .frame(width: fullView.size.width * 0.7)
                             .background(self.colors[index % 7])
-                            .rotation3DEffect(.degrees(Double(geo.frame(in: .global).midY) / 5), axis: (x: 0, y: 1, z: 0))
+                            //.rotation3DEffect(.degrees(Double(geo.frame(in: .global).midY) / 5), axis: (x: 0, y: 1, z: 0))
                     }
                     .frame(height: 40)
                 }

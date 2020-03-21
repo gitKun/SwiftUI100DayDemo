@@ -10,7 +10,7 @@ import SwiftUI
 
 struct UseAlignmentGuideDemo: View {
     var body: some View {
-        AlignmentGuideDemo4()
+        UseCustomAilgnment()
     }
 }
 

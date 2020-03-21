@@ -64,6 +64,7 @@ struct MissionView: View {
                             .contentShape(Rectangle())
                             .scaleEffect(self.scaleForImage(localMidY: innerGeo.frame(in: .local).midY, globalMidY: innerGeo.frame(in: .global).midY, safeSpace: geometry.safeAreaInsets.top))
                             .onTapGesture {
+                                print("innerGeo.global.midY = \(innerGeo.frame(in: .global).midY)")
                                 print("innerGeo.local.midY = \(innerGeo.frame(in: .local).midY)")
                                 print("geometry.safeAreaInsets = \(geometry.safeAreaInsets)")
                         }

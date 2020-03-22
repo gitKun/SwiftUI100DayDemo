@@ -10,7 +10,14 @@ import SwiftUI
 
 struct ResortView: View {
     let resort: Resort
+    
     @Environment(\.horizontalSizeClass) var sizeClass
+    
+    @State private var selectedFacility: Facility?
+    
+    @EnvironmentObject var favorites: Favorites
+    
+    
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 0) {
@@ -40,18 +47,40 @@ struct ResortView: View {
                         .padding(.vertical)
                     Text("Facilities")
                         .font(.headline)
-                    Text(ListFormatter.localizedString(byJoining: resort.facilities))
-                        .padding(.vertical)
+                        //Text(ListFormatter.localizedString(byJoining: resort.facilities)).padding(.vertical)
+                    HStack {
+                        ForEach(resort.facilityTypes) { facility in
+                            facility.icon
+                                .font(.title)
+                                .onTapGesture {
+                                    self.selectedFacility = facility
+                                }
+                        }
+                    }
+                    .padding(.vertical)
                 }
                 .padding()
             }
+            Button(favorites.contains(resort) ? "Remove from Favorites" : "Add to Favorites") {
+                if self.favorites.contains(self.resort) {
+                    self.favorites.remove(self.resort)
+                } else {
+                    self.favorites.add(self.resort)
+                }
+            }
+            .padding()
         }
         .navigationBarTitle(Text("\(resort.name)"))
+        .alert(item: $selectedFacility) { facility in
+            facility.alert
+        }
     }
+    
 }
 
 struct ResortView_Previews: PreviewProvider {
+    
     static var previews: some View {
-        ResortView(resort: Resort.example)
+        ResortView(resort: Resort.example).environmentObject(Favorites())
     }
 }

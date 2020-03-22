@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A108E2E324279B3B007770E6 /* SystemPlusMinusIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A108E2E224279B3B007770E6 /* SystemPlusMinusIcon.swift */; };
 		A14F4E6124134147007E2188 /* PlusMinusAnimationIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14F4E6024134147007E2188 /* PlusMinusAnimationIcon.swift */; };
 		A17E74A02410C08F00ED9464 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17E749F2410C08F00ED9464 /* AppDelegate.swift */; };
 		A17E74A22410C08F00ED9464 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17E74A12410C08F00ED9464 /* SceneDelegate.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A108E2E224279B3B007770E6 /* SystemPlusMinusIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemPlusMinusIcon.swift; sourceTree = "<group>"; };
 		A14F4E6024134147007E2188 /* PlusMinusAnimationIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusMinusAnimationIcon.swift; sourceTree = "<group>"; };
 		A17E749C2410C08F00ED9464 /* Drawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drawing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A17E749F2410C08F00ED9464 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				A19532E42412531E009CB044 /* DrawingGroupDemo.swift */,
 				A19532E624125591009CB044 /* BlendModeDemo.swift */,
 				A14F4E6024134147007E2188 /* PlusMinusAnimationIcon.swift */,
+				A108E2E224279B3B007770E6 /* SystemPlusMinusIcon.swift */,
 				A17E74A52410C09000ED9464 /* Assets.xcassets */,
 				A17E74AA2410C09000ED9464 /* LaunchScreen.storyboard */,
 				A17E74AD2410C09000ED9464 /* Info.plist */,
@@ -177,6 +180,7 @@
 				A19532E124125161009CB044 /* ArcShape.swift in Sources */,
 				A19532DB24124FC3009CB044 /* CheckerborderShape.swift in Sources */,
 				A17E74A02410C08F00ED9464 /* AppDelegate.swift in Sources */,
+				A108E2E324279B3B007770E6 /* SystemPlusMinusIcon.swift in Sources */,
 				A19532E724125591009CB044 /* BlendModeDemo.swift in Sources */,
 				A19532DF241250F9009CB044 /* FlowerShap.swift in Sources */,
 				A17E74A22410C08F00ED9464 /* SceneDelegate.swift in Sources */,

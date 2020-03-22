@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A108E2DF24270A8D007770E6 /* Facility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A108E2DE24270A8D007770E6 /* Facility.swift */; };
+		A108E2E124278C71007770E6 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = A108E2E024278C71007770E6 /* Favorites.swift */; };
 		A13A0386242099E2003FEC2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13A0385242099E2003FEC2E /* AppDelegate.swift */; };
 		A13A0388242099E2003FEC2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13A0387242099E2003FEC2E /* SceneDelegate.swift */; };
 		A13A038A242099E2003FEC2E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13A0389242099E2003FEC2E /* ContentView.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A108E2DE24270A8D007770E6 /* Facility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facility.swift; sourceTree = "<group>"; };
+		A108E2E024278C71007770E6 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 		A13A0382242099E2003FEC2E /* SnowSeeker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnowSeeker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A13A0385242099E2003FEC2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A13A0387242099E2003FEC2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +81,8 @@
 				A13A03A12420B2EE003FEC2E /* SkiDetailsView.swift */,
 				A13A03A32420B346003FEC2E /* ResortDetailsView.swift */,
 				A13A039B2420A2E9003FEC2E /* Resort.swift */,
+				A108E2DE24270A8D007770E6 /* Facility.swift */,
+				A108E2E024278C71007770E6 /* Favorites.swift */,
 				A13A038B242099E3003FEC2E /* Assets.xcassets */,
 				A13A0390242099E3003FEC2E /* LaunchScreen.storyboard */,
 				A13A0393242099E3003FEC2E /* Info.plist */,
@@ -168,6 +174,8 @@
 				A13A039E2420AF22003FEC2E /* WelcomeView.swift in Sources */,
 				A13A03A22420B2EE003FEC2E /* SkiDetailsView.swift in Sources */,
 				A13A03A42420B346003FEC2E /* ResortDetailsView.swift in Sources */,
+				A108E2E124278C71007770E6 /* Favorites.swift in Sources */,
+				A108E2DF24270A8D007770E6 /* Facility.swift in Sources */,
 				A13A0386242099E2003FEC2E /* AppDelegate.swift in Sources */,
 				A13A0388242099E2003FEC2E /* SceneDelegate.swift in Sources */,
 				A13A03A02420B186003FEC2E /* ResortView.swift in Sources */,

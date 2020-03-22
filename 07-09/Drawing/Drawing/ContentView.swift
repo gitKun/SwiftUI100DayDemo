@@ -51,6 +51,12 @@ struct ContentView: View {
                     Text("AnimationIcon-PlusMinus")
                         .padding(.vertical)
                 }
+                NavigationLink(destination: SystemPlusMinusIcon()) {
+                    Text("SystemPlusMinusIcon")
+                        .padding(.vertical)
+                }
+                
+                
                 
             }
             .navigationBarTitle("Drawing Demo")

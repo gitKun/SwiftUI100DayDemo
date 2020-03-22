@@ -11,6 +11,8 @@ import SwiftUI
 struct ContentView: View {
     let resorts: [Resort] = Bundle.main.decode("resorts.json")
     
+    @ObservedObject var favorites = Favorites()
+    
     var body: some View {
         NavigationView {
             List(resorts) { resort in
@@ -33,12 +35,22 @@ struct ContentView: View {
                         Text("\(resort.runs) runs")
                             .foregroundColor(.secondary)
                     }
+                    .layoutPriority(1)
+                    
+                    if self.favorites.contains(resort) {
+                        Spacer()
+                        Image(systemName: "heart.fill")
+                            .accessibility(label: Text("This is a favorite resort"))
+                            .foregroundColor(.red)
+                    }
+                    
                 }
             }
             .navigationBarTitle("Resorts")
             
             WelcomeView()
         }
+        .environmentObject(favorites)
     }
 }
 

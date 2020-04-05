@@ -22,6 +22,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Create the SwiftUI view that provides the window contents.
         let contentView = ContentView()
 
+        // 设置 navigationBar
+        UINavigationBar.appearance().barTintColor = UIColor.systemBlue
+            //UINavigationBar.appearance().backgroundColor = UIColor(named: AppColorManager.manager.themeColor)
+            UINavigationBar.appearance().isTranslucent = false
+            UINavigationBar.appearance().shadowImage = UIImage()
+            // 2.
+            UINavigationBar.appearance().largeTitleTextAttributes = [
+                .foregroundColor: UIColor(named: "textBlackColor") ?? .black,
+            ]
+        
+            // 3.
+            UINavigationBar.appearance().titleTextAttributes = [
+                .foregroundColor: UIColor(named: "textBlackColor") ?? .black,
+            ]
+        
+        
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)

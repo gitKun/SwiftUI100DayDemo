@@ -20,6 +20,7 @@
 		A16A40AA240CD12300D45388 /* RockPaperScissors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16A40A9240CD12300D45388 /* RockPaperScissors.swift */; };
 		A17E7438240E062100ED9464 /* Animation_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17E7437240E062100ED9464 /* Animation_1.swift */; };
 		A17E743A240E54BD00ED9464 /* MultiplierGames.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17E7439240E54BD00ED9464 /* MultiplierGames.swift */; };
+		A18C277F2436177F0080C360 /* BUGTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18C277E2436177F0080C360 /* BUGTransition.swift */; };
 		A1A98D87240A4CC8000A5756 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A98D86240A4CC8000A5756 /* ColorPickerView.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		A16A40A9240CD12300D45388 /* RockPaperScissors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissors.swift; sourceTree = "<group>"; };
 		A17E7437240E062100ED9464 /* Animation_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation_1.swift; sourceTree = "<group>"; };
 		A17E7439240E54BD00ED9464 /* MultiplierGames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplierGames.swift; sourceTree = "<group>"; };
+		A18C277E2436177F0080C360 /* BUGTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUGTransition.swift; sourceTree = "<group>"; };
 		A1A98D86240A4CC8000A5756 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 				A1A98D86240A4CC8000A5756 /* ColorPickerView.swift */,
 				A153586A240AA052004162F0 /* WeSplit.swift */,
 				A153586C240AA13C004162F0 /* TimeConversion.swift */,
+				A18C277E2436177F0080C360 /* BUGTransition.swift */,
 				A135BD3324016F340081FECA /* Assets.xcassets */,
 				A135BD3824016F340081FECA /* LaunchScreen.storyboard */,
 				A135BD3B24016F340081FECA /* Info.plist */,
@@ -181,6 +184,7 @@
 				A135BD3224016F320081FECA /* ContentView.swift in Sources */,
 				A17E7438240E062100ED9464 /* Animation_1.swift in Sources */,
 				A153586F240B806A004162F0 /* GuessFlag.swift in Sources */,
+				A18C277F2436177F0080C360 /* BUGTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

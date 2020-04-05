@@ -36,7 +36,7 @@ struct ContentView: View {
                         .padding(.vertical)
                 }
                 NavigationLink(destination: PathAndShapeContent()) {
-                    Text("PathAmdShape")
+                    Text("PathAndShape")
                         .padding(.vertical)
                 }
                 NavigationLink(destination: DrawingGroupDemo()) {

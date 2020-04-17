@@ -13,6 +13,7 @@
 		A135BD3424016F340081FECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A135BD3324016F340081FECA /* Assets.xcassets */; };
 		A135BD3724016F340081FECA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A135BD3624016F340081FECA /* Preview Assets.xcassets */; };
 		A135BD3A24016F340081FECA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A135BD3824016F340081FECA /* LaunchScreen.storyboard */; };
+		A13E94CE243A033000D79F0E /* BlendModelDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13E94CD243A033000D79F0E /* BlendModelDemo.swift */; };
 		A153586B240AA052004162F0 /* WeSplit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A153586A240AA052004162F0 /* WeSplit.swift */; };
 		A153586D240AA13C004162F0 /* TimeConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A153586C240AA13C004162F0 /* TimeConversion.swift */; };
 		A153586F240B806A004162F0 /* GuessFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = A153586E240B806A004162F0 /* GuessFlag.swift */; };
@@ -33,6 +34,7 @@
 		A135BD3624016F340081FECA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A135BD3924016F340081FECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A135BD3B24016F340081FECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A13E94CD243A033000D79F0E /* BlendModelDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlendModelDemo.swift; sourceTree = "<group>"; };
 		A153586A240AA052004162F0 /* WeSplit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeSplit.swift; sourceTree = "<group>"; };
 		A153586C240AA13C004162F0 /* TimeConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeConversion.swift; sourceTree = "<group>"; };
 		A153586E240B806A004162F0 /* GuessFlag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessFlag.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				A153586A240AA052004162F0 /* WeSplit.swift */,
 				A153586C240AA13C004162F0 /* TimeConversion.swift */,
 				A18C277E2436177F0080C360 /* BUGTransition.swift */,
+				A13E94CD243A033000D79F0E /* BlendModelDemo.swift */,
 				A135BD3324016F340081FECA /* Assets.xcassets */,
 				A135BD3824016F340081FECA /* LaunchScreen.storyboard */,
 				A135BD3B24016F340081FECA /* Info.plist */,
@@ -181,6 +184,7 @@
 				A16A40AA240CD12300D45388 /* RockPaperScissors.swift in Sources */,
 				A17E743A240E54BD00ED9464 /* MultiplierGames.swift in Sources */,
 				A1535871240B8413004162F0 /* ViewsAndModifiers.swift in Sources */,
+				A13E94CE243A033000D79F0E /* BlendModelDemo.swift in Sources */,
 				A135BD3224016F320081FECA /* ContentView.swift in Sources */,
 				A17E7438240E062100ED9464 /* Animation_1.swift in Sources */,
 				A153586F240B806A004162F0 /* GuessFlag.swift in Sources */,
